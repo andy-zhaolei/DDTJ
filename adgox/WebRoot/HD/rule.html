@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<base href="http://39.108.247.168:8090/adgox/"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<title>百万宝箱</title>
+	<link rel="stylesheet" href="css/index.css">
+		<link rel="icon" href="img/favicon.ico">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){//加载用户获得卷信息		
+		$.ajax({
+			url:'http://39.108.247.168:8090/adgox/cbclient/api/banner/SSGB',
+			type:'POST',
+			dataType:'json',
+			/* async:false,  */
+			success:function(result){
+				$("#demo1").empty();			
+				var rs=JSON.stringify(result);
+				var rsjson=JSON.parse(rs);
+				var datajson=rsjson.data;
+				var html="<p><p>";
+				$.each(datajson,function(inx,obj){
+					html=html+"<p style='color:green;height:60px;line-height:15px'>"+obj.text+"<p>";				
+				});				
+				$("#demo1").html(html);					
+				}				
+			}	
+		);		
+		var params=window.location.search;
+		var userId=params.split("=")[1];
+		
+		$("#hid").val(userId);
+		
+		
+});	
+	</script>
+</head>
+<body>
+<div id="container">
+	<div id="right_container">
+		 <div class="guize_jiangping">
+		 <input type="hidden" id="hid" value="">
+		<!-- <img src="img/img_guize@2x.png" alt=""  onclick="toRule()">	 -->
+		 <img src="img/img_jingpin@3x.png" alt="" onclick="toJiangpin()">
+		<img src="img/fsy.png" alt="" onclick="toIndex()">
+			<script type="text/javascript">
+				
+				function toJiangpin(){
+					var userId=$("#hid").val();
+					window.location.href="http://39.108.247.168:8090/adgox/HD/jiangpin.html?userId="+userId;			
+				}
+				function toIndex(){
+					var userId=$("#hid").val();
+					window.location.href="http://39.108.247.168:8090/adgox/HD/index.html?userId="+userId;
+				}
+			</script>
+		 </div>
+	</div>
+<div class="clearfix"></div>
+	<div id="lamp_container">
+	  <div class="lamp">
+		  <div class="lamp_term">
+			<img src="img/icon_ts@3x@2x.png">		
+			<div align="left" id="demo" style="overflow:hidden;height:25px;
+			 padding-top:0.14rem;padding-bottom: 0.14rem;padding-left: 0px;padding-right: 0px;font-size: 10px;">  
+    		<div id="demo1" > 
+    		</div>  
+   			 <div id="demo2"></div>
+			<script language="javascript" type="text/javascript">  
+			var demo = document.getElementById("demo");  
+			var demo1 = document.getElementById("demo1");  
+			var demo2 = document.getElementById("demo2");  
+			var speed=80;    //数值越大滚动速度越慢  
+			demo2.innerHTML = demo1.innerHTML;    
+			demo.scrollTop = demo.scrollHeight+'px';  
+			function Marquee(){   		
+    		if(demo2.offsetTop-demo.scrollTop<=0)    //当滚动至demo1与demo2交界时  
+       		 demo.scrollTop-=demo1.offsetHeight    //demo跳到最顶端  
+    		else{  
+       		 demo.scrollTop++  
+   			 }       
+			}  
+			var MyMar = setInterval(Marquee,speed);  
+		</script>        
+	</div> 
+		  </div>
+	  </div>
+	</div>
+<div class="clearfix"></div>
+	<div class="act_time"><p>活动时间：2018.2.12-2018.3.9</p></div>
+	<div id="rule_container">
+		<img src="img/img_j_guize@3x.png" alt="">		
+    </div>
+<footer id="footer">
+	<p>点点淘金一个可以赚钱的金银饰品订购平台</p>
+</footer>
+</div>
+</body>
+</html>

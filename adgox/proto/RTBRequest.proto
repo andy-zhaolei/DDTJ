@@ -1,0 +1,132 @@
+option java_outer_classname = "RTBRequestProtobuf";//生成的数据访问类的类名 
+message RTBRequest
+{
+required string sid = 1;
+optional string client_ip = 2;
+optional string user_agent = 3;
+optional string language = 4;
+/* 检索ID，唯一标识请求，用于Trace */
+/* 用户IP地址，明文 */
+/* User-Agent */
+/* zh-CN */
+enum NetType
+{
+NT_UnKnown = 0;
+NT_Ethernet = 1;
+NT_Wifi = 2;
+NT_Cellular = 3;
+NT_Cellular_2G = 4;
+NT_Cellular_3G = 5;
+NT_Cellular_4G = 6;
+}
+optional NetType net_type = 5;
+optional string os = 6;
+optional string os_version = 7;
+message DeviceInfo
+{
+enum DeviceType
+{
+DT_UnKnown = 0;
+DT_Phone = 1;
+DT_Pad = 2;
+DT_PC = 3;
+DT_TV = 4;
+DT_Wap = 5;
+}
+optional DeviceType type = 1;
+optional uint32 screen_width = 2;
+/* 屏幕宽度 */
+optional uint32 screen_height = 3; /* 屏幕高度 */
+optional uint32 screen_density = 4; /* 屏幕密度 */
+optional bool horizontal = 5;
+optional string vendor = 6;
+optional string model = 7;
+/* 横竖屏标记 */
+/* 设备生产商 */
+/* 设备型号 */
+}
+optional DeviceInfo device_info = 8;
+
+
+
+
+ 
+message AppInfo
+{
+optional string app_id = 1;
+optional string app_name = 2;
+optional string app_version = 3;
+optional string pkg_name = 4;
+optional string mkt = 5;
+/* 应用商店 */
+optional string mkt_sn = 6; /* app在商店内的编号 */
+optional string mkt_cat = 7; /* 分类 */
+optional string mkt_tag = 8; /* 标签 */
+}
+optional AppInfo app_info = 9; /* app信息 */
+message IdInfo
+{
+optional string imei = 1;
+optional string mac = 2;
+optional string android_id = 3;
+optional string android_adid = 4; /* android advertising ID */
+optional string idfa = 5;
+/* iOS(>=6) idfa */
+/* iOS(< 6) */
+optional string openUDID = 6;
+}
+optional IdInfo id_info = 10;
+/* ID信息 */
+message AdSlotInfo
+{
+optional string id = 1; /* 广告位ID */
+optional uint32 width = 2;
+optional uint32 height = 3;
+enum AdType
+{
+AT_ALL = 0;
+/* 无限制 */
+AT_REDIRECT = 1;
+AT_DOWNLOAD = 2;
+/* 点击跳转 */
+/* 点击下载 */
+}
+optional AdType type = 4;
+/* 广告位能接受的广告类型 */
+optional bool open_screen = 5; /* 开屏标记，请使用ad_slot_type判断广告位类型 */
+enum AdSlotType
+{
+AST_BANNER = 0;
+/* banner广告位,使用Banner proto协议*/
+AST_OPEN_SCREEN = 1; /* 开屏广告位，使用Feeds proto协议，暂不对外开
+放*/
+
+
+
+
+ 
+AST_TABLE_PLAQUE = 2; /* 插屏广告位，使用Feeds proto协议，暂不对外
+开放*/
+AST_FEEDS = 3; /* feeds流广告位，使用Feeds proto协议*/
+AST_INTEGRAL_WALL = 4; /* 积分墙广告位 ，暂不对外开放*/
+}
+optional AdSlotType ad_slot_type = 6;
+optional uint32 min_cpm = 7;
+/* 广告位类型 */
+/* 广告位底价 */
+optional uint32 req_num = 8 [default = 1]; /* 广告位请求的广告条数，默认请求1条广
+告 */
+repeated string excluded_landing_page_url = 9; /* 不允许的落地页url */
+repeated int32 excluded_category = 10; /* 不允许的行业类型 (目前为空)*/
+repeated int32 allowed_category = 11; /* 仅允许的行业类型（目前为空） */
+repeated int32 posid = 13;
+optional int32 page_index = 14; /* 页编号*/
+}
+repeated AdSlotInfo ad_slots = 11; /* 广告位信息，默认一个 */
+optional bool is_test = 12 [default=false]; /* 测试请求标记 */
+repeated string type_id_list = 24; /* 本次广告请求要求的样式列表，不填为无限制 */
+optional bool is_https = 25 [default = false]; /* 是否https, true的话，返回的物料地址和上
+报地址都必须是https的，否则会被过滤 */
+}
+
+

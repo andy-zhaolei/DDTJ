@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name='apple-touch-fullscreen' content='yes'>
+  <meta name="full-screen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>注册成功</title>
+<link href="./static/css/common.fcf8fa3cd5fc1eeb44b4a205f3386851.css" rel="stylesheet"></head>
+
+<body>
+  <div class="mod-register">
+    <div class="register-pic"><img src="./static/img/register-pic.a7dd1dd.png"></div>
+    <h3>注册成功！</h3>
+      <div class="stip">
+           <p>赶紧下载APP，快去赚钱吧</p>
+      </div>
+      <div class="field-submit">
+          <input type="button" class="button-submit" id="loadingApp" value="立即下载">
+      </div>
+    </div>
+<script>
+var u = navigator.userAgent,
+    app = navigator.appVersion;
+
+var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //Android终端
+var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+function GetQueryString(name){
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+
+document.getElementById("loadingApp").onclick = function(){
+    let s = GetQueryString("exchange"),
+        m = GetQueryString("memberChannel"),
+        url = '';
+    if(s==="CB_LONGHUI"){
+      if(m==="888"){
+          t = "龙聚盈";
+          url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.longhui.happy";
+      }else{
+          t = "铂盈点金";
+          url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.longhui.dragonmall";
+      }
+    }else if(s==="CB_GUOXIANG"){
+      url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.shzstr.diandiantaojin";
+    }
+    window.location.href = url;
+    // if (isAndroid) {
+    //
+    //     // alert("安卓机！")
+    // }
+    // if (isIOS) {
+    //     window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.baibei.crossboarder";
+    //     // alert("苹果机！")
+    // }
+}
+</script>
+<style>
+.mod-register{ text-align: center;}
+.mod-register h3{padding:10px 0 10px;font-size: 20px; font-family: PingFangSC-Semibold; font-size: 28px; color: #FF6923; letter-spacing: 0;}
+.stip { font-family: PingFangSC-Regular; font-size: 16px; color: rgba(48,48,48,0.70); letter-spacing: 0;}
+.field-submit { margin-top: 30px; }
+</style>
+<script type="text/javascript" src="./static/js/common.68fb07ddbecfc202fca5.js"></script></body>
+</html>

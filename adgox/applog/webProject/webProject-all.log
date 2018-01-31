@@ -1,0 +1,79 @@
+2017-11-17 12:30:01,20917-11-17 12:30:01  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-17 12:30:47,10317-11-17 12:30:47  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 13:01:34,84417-11-17 13:01:34  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-17 15:52:39,52017-11-17 15:52:39  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 16:36:40,60817-11-17 16:36:40  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-17 16:38:30,52617-11-17 16:38:30  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-17 16:39:19,67217-11-17 16:39:19  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-17 16:42:32,82217-11-17 16:42:32  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 400
+2017-11-17 16:43:06,24017-11-17 16:43:06  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 16:44:59,69817-11-17 16:44:59  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 17:23:52,00017-11-17 17:23:52  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 17:24:55,40817-11-17 17:24:55  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 18:40:59,15617-11-17 18:40:59  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-17 18:42:50,57717-11-17 18:42:50  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-18 22:15:08,56217-11-18 22:15:08  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-18 22:26:38,14217-11-18 22:26:38  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-18 22:29:39,78317-11-18 22:29:39  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-18 22:31:32,54217-11-18 22:31:32  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-18 22:34:05,42417-11-18 22:34:05  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-18 22:36:29,62717-11-18 22:36:29  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 13:22:26,69017-11-19 13:22:26  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 13:23:56,91717-11-19 13:23:56  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 18:22:59,61117-11-19 18:22:59  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 18:25:23,60717-11-19 18:25:23  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-19 18:26:06,53917-11-19 18:26:06  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 18:31:16,69417-11-19 18:31:16  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 18:35:59,25517-11-19 18:35:59  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-19 18:41:20,67217-11-19 18:41:20  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 10:59:22,79417-11-20 10:59:22  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-20 10:59:57,48717-11-20 10:59:57  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 14:50:26,74117-11-20 14:50:26  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 15:11:37,95517-11-20 15:11:37  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 15:35:19,99017-11-20 15:35:19  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 15:46:09,75917-11-20 15:46:09  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 15:50:59,01117-11-20 15:50:59  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-20 15:54:29,66517-11-20 15:54:29  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 15:59:03,92217-11-20 15:59:03  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 16:26:09,53017-11-20 16:26:09  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 16:26:33,93617-11-20 16:26:33  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-20 16:28:41,16117-11-20 16:28:41  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 15:58:01,18617-11-21 15:58:01  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-21 16:00:54,65817-11-21 16:00:54  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-21 16:10:55,65517-11-21 16:10:55  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 404
+2017-11-21 16:15:11,58217-11-21 16:15:11  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-21 16:16:51,73317-11-21 16:16:51  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-21 16:19:47,13217-11-21 16:19:47  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:20:14,19317-11-21 16:20:14  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:24:06,09817-11-21 16:24:06  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:24:27,67517-11-21 16:24:27  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:24:37,46717-11-21 16:24:37  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:24:47,87617-11-21 16:24:47  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:24:56,11417-11-21 16:24:56  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-21 16:27:49,30817-11-21 16:27:49  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-22 10:16:48,72517-11-22 10:16:48  INFO (HttpClientUtils.java:272 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-22 10:20:26,60517-11-22 10:20:26  INFO (HttpClientUtils.java:258 LINE) HttpClientUtils.postJson -> 200
+2017-11-22 11:39:02,04317-11-22 11:39:02  INFO (HttpClientUtils.java:279 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-23 17:59:19,19617-11-23 17:59:19  INFO (HttpClientUtils.java:264 LINE) HttpClientUtils.postJson -> 200
+2017-11-23 18:01:47,10717-11-23 18:01:47  INFO (HttpClientUtils.java:264 LINE) HttpClientUtils.postJson -> 404
+2017-11-23 18:07:14,51917-11-23 18:07:14  INFO (HttpClientUtils.java:264 LINE) HttpClientUtils.postJson -> 200
+2017-11-23 18:11:32,39217-11-23 18:11:32  INFO (HttpClientUtils.java:279 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-23 18:12:24,04917-11-23 18:12:24  INFO (HttpClientUtils.java:264 LINE) HttpClientUtils.postJson -> 200
+2017-11-24 09:42:38,08117-11-24 09:42:38  INFO (HttpClientUtils.java:279 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-24 09:49:56,54617-11-24 09:49:56  INFO (HttpClientUtils.java:264 LINE) HttpClientUtils.postJson -> 200
+2017-11-24 11:10:16,13117-11-24 11:10:16  INFO (HttpClientUtils.java:279 LINE) HttpClientUtils.postJson -> Read timed out
+2017-11-24 13:18:47,04017-11-24 13:18:47  INFO (HttpMethodDirector.java:438 LINE) HttpMethodDirector.executeWithRetry -> I/O exception (javax.net.ssl.SSLException) caught when processing request: Unrecognized SSL message, plaintext connection?
+2017-11-24 13:18:47,04217-11-24 13:18:47  INFO (HttpMethodDirector.java:444 LINE) HttpMethodDirector.executeWithRetry -> Retrying request
+2017-11-24 13:18:47,04517-11-24 13:18:47  INFO (HttpMethodDirector.java:438 LINE) HttpMethodDirector.executeWithRetry -> I/O exception (javax.net.ssl.SSLException) caught when processing request: Unrecognized SSL message, plaintext connection?
+2017-11-24 13:18:47,04617-11-24 13:18:47  INFO (HttpMethodDirector.java:444 LINE) HttpMethodDirector.executeWithRetry -> Retrying request
+2017-11-24 13:18:47,04817-11-24 13:18:47  INFO (HttpMethodDirector.java:438 LINE) HttpMethodDirector.executeWithRetry -> I/O exception (javax.net.ssl.SSLException) caught when processing request: Unrecognized SSL message, plaintext connection?
+2017-11-24 13:18:47,04817-11-24 13:18:47  INFO (HttpMethodDirector.java:444 LINE) HttpMethodDirector.executeWithRetry -> Retrying request
+2017-11-24 13:18:47,05117-11-24 13:18:47  INFO (HttpClientUtils.java:279 LINE) HttpClientUtils.postJson -> Unrecognized SSL message, plaintext connection?
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpMethodDirector.java:438 LINE) HttpMethodDirector.executeWithRetry -> I/O exception (javax.net.ssl.SSLException) caught when processing request: Unrecognized SSL message, plaintext connection?
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpMethodDirector.java:444 LINE) HttpMethodDirector.executeWithRetry -> Retrying request
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpMethodDirector.java:438 LINE) HttpMethodDirector.executeWithRetry -> I/O exception (javax.net.ssl.SSLException) caught when processing request: Unrecognized SSL message, plaintext connection?
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpMethodDirector.java:444 LINE) HttpMethodDirector.executeWithRetry -> Retrying request
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpMethodDirector.java:438 LINE) HttpMethodDirector.executeWithRetry -> I/O exception (javax.net.ssl.SSLException) caught when processing request: Unrecognized SSL message, plaintext connection?
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpMethodDirector.java:444 LINE) HttpMethodDirector.executeWithRetry -> Retrying request
+2017-11-27 10:44:55,97017-11-27 10:44:55  INFO (HttpClientUtils.java:279 LINE) HttpClientUtils.postJson -> Unrecognized SSL message, plaintext connection?
+2017-11-27 10:45:07,99517-11-27 10:45:07  INFO (HttpClientUtils.java:264 LINE) HttpClientUtils.postJson -> 200

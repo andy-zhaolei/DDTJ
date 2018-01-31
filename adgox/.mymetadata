@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="lhsc"
+  id="myeclipse.1453188468282"
+  context-root="/adgox"
+  j2ee-spec="5.0"
+  archive="lhsc.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

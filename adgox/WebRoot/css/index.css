@@ -1,0 +1,2405 @@
+@charset "utf-8";
+html {
+	font-size: 625%;
+}
+body,h1,h2,h3,h4,p,ul,ol,form,fieldset,figure {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size: .16rem;
+}
+ul,ol {
+	list-style: outside none none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+div,figure,figcaption {
+	box-sizing: border-box;
+}
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#container{
+	max-width: 7.5rem;
+	height: auto;
+/*	max-height: 18.57rem;*/
+	margin: 0 auto;
+/*	background-color: red;*/
+	background-image: url(../img/img_bjm@2x.png);
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	padding-top:2.475rem;
+}
+
+#right_container{
+    max-width: 7.5rem;
+/*    margin-top: 2.475rem;*/	
+}
+
+#right_container .guize_jiangping{
+	float: right;
+	padding-bottom:.2rem;
+
+}
+/*#right_container img{
+	display: block;
+	width: .88rem;
+	height: .33rem;
+	padding-top: .2rem;
+}*/
+#right_container img{
+	width: 1.33rem;
+	height: .50rem;
+	padding-top: .2rem;
+}
+
+
+#lamp_container{
+	max-width: 7.5rem;
+	height: 0.36rem;
+}
+#lamp_container .lamp{
+	width: 70%;
+	margin: 0 auto;
+	height: 0.36rem;
+		background-image: url(../img/img_daidi@3x.png);
+			background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+}
+
+#lamp_container .lamp_term{
+	width: 100%;
+	height: .36rem;
+	margin: 0 auto;
+	padding-left: 25%;
+}
+
+#lamp_container img{
+	display: block;
+	width: .18rem;
+	height: .18rem;
+	padding: .09rem 0;
+	float: left;
+	margin-right: .15rem;
+
+}
+
+#lamp_container p{
+	height: 0.36rem;
+	line-height: 0.36rem;
+	font-size: .12rem;
+	color: #ee4f31;
+	float: left;
+}
+.act_time{
+	max-width: 7.5rem;
+	height: .2rem;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: .2rem;
+	padding-top: .1rem;
+
+}
+.act_time p{
+	height: .2rem;
+	line-height: .2rem;
+	font-size: .12rem;
+	color: #fff;
+	text-align: center;
+
+}
+
+/*首页*/
+#menu_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .675rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+#menu_container .act{
+	max-width: 7.5rem;
+	height: 2.0rem;
+}
+#menu_container .act_yin{
+	margin-top: .425rem;
+	width: 100%;
+	max-height: 2.0rem;
+		background-image: url(../img/img_yin@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_jin{
+	width: 100%;
+	
+		max-height: 2.0rem;
+		background-image: url(../img/img_jin@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_zuan{
+	width: 100%;
+	
+	max-height: 2.0rem;
+		background-image: url(../img/img_zuan@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_hongyun{
+	width: 100%;
+	
+		max-height: 2.0rem;
+		background-image: url(../img/img_hongyun@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+
+
+#menu_container .act_term{
+	width: 70%;
+	float: right;
+	padding-top: .15rem;
+	padding-left: .55rem;
+}
+#menu_container .act_term img{
+	display: block;
+	width: .75rem;
+	height: .25rem;
+}
+
+#menu_container .act_term p{
+	width: 90%;
+	font-size: .12rem;
+	color: #666;
+	padding-top:.04rem;
+}
+
+/*活动规则*/
+#rule_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+/*	background-image: url(../img/img_j_guize@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;*/
+	padding-bottom: .2rem;
+/*	padding-top: .1rem;*/
+}
+
+#rule_container img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*我的奖品*/
+#jiangpin_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_j_tiaofu@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: 1.45rem;
+}
+#jiangpin_container .tiyanjuan span{
+	position: relative;
+	left:1.235rem;
+	top:-.32rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+}
+
+#jiangpin_container .cangbaotu span{
+	position: relative;
+	left:1.435rem;
+	top:-.75rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+
+}
+.tiyanjuan figure{
+	display: block;
+	width: 50%;
+	height: 1.24rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+
+}
+.tiyanjuan figure  img{
+	margin: 0 auto;
+	width: 95%;
+	height: 95%;
+}
+
+.cangbaotu figure{
+	display: block;
+	width: 50%;
+	height: 1.75rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+}
+.cangbaotu figure img{
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+.hongyun figure{
+	display: block;
+	width: 70%;
+	height: 1.51rem;
+	margin: 0 auto;
+	margin-bottom: .1rem;
+}
+
+.hongyun figure img{
+		margin: 0 auto;
+	width: 100%;
+	height: 100%;
+
+}
+.tishi{
+	width: 100%;
+	height: .22rem;
+}
+
+.tishi p{
+	line-height: .22rem;
+	font-size: .14rem;
+	color: #999;
+	text-align: center;
+}
+
+/*底部*/
+#footer{
+	max-width: 7.5rem;
+	height: .2rem;
+	line-height: .2rem;
+	margin: 0 auto;
+	padding: .3rem 0;
+}
+#footer p{
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+
+
+/*体验券*/
+.huode_container{
+        display: none;
+        position: absolute; 
+        top:50%; 
+        left: 0; 
+        bottom: 0;  
+        right: 0; 
+        max-width: 3.75rem;
+        height: 4.95rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@2x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+ .huode_header{ 
+         width:100%;  
+         height: .3rem;
+}
+.huode_header p{
+        display: block;
+        width: 90%;
+        font-size:.18rem;
+        color: #fff;
+        line-height: .3rem;
+        text-align: center;
+        float: left;
+
+}
+.huode_header span{ 
+        display: block;
+        width: 10%;
+        float: right;
+}
+.huode_header img{
+        width: .16rem;
+        height: .16rem;
+        margin: 0 auto;
+        padding-top: .05rem;
+}
+
+.huode_menu{
+        padding-top: .41rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_menu figure{
+         display: block;
+        width: 50%;
+        height: .75rem;
+        margin: 0 auto;
+
+}
+.huode_menu img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+}
+.huode_dianjichakan{
+        padding-top: 2.1rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_dianjichakan button{
+        display: block;
+        margin: 0 auto;
+        width: 1.5rem;
+        height: .5rem;
+        line-height: .4rem;
+        background-color: #fff;
+        border: none;
+        border-radius: .08rem;
+        font-size: .18rem;
+        color: #ee4f31;
+        text-align: center;
+}
+
+.zhezhao_bg{
+        display: none; 
+        position: absolute; 
+        z-index: 9998;
+        left: 0;  
+        top: 0;  
+        bottom: 0;
+        right: 0;
+        width: 100%; 
+        height: 100%; 
+       /*  background: #000; 
+        opacity:0.5; */
+}
+
+
+/*88元体验券+藏宝图上卷*/
+.cangbaotu_container{
+        display: none;
+        position: absolute; 
+        top: 50%; 
+        left: 0; 
+        bottom: 0;  
+        right: 0; 
+        max-width: 3.75rem;
+        height: 5.35rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@2x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.cangbaotu_menu{
+	    padding-top: .18rem;
+        width: 100%;
+        height: 1.3rem;
+        margin-bottom: .2rem;
+
+}
+.cangbaotu_menu .figure_l{
+	padding-top: .3rem;
+        display: block;
+        width: 50%;
+        height: 1.1rem;
+        margin: 0 auto;
+        float: left;
+
+}
+
+.cangbaotu_menu .figure_l img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;     
+}
+
+.cangbaotu_menu .figure_r{
+        display: block;
+        width: 40%;
+        height: 1.3rem;
+        margin: 0 auto;
+        float: left;
+
+}
+.cangbaotu_menu .figure_r img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;
+}
+
+/*媒体查询，大于481px小于640px*/
+@media (min-width: 480px) and (max-width: 640px) {
+	#container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0  auto;
+/*	background-color: red;*/
+	background-image: url(../img/img_bjm@3x.png);
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	padding-top:2.475rem;
+}
+
+#right_container img{
+	width: 1.33rem;
+	height: .50rem;
+	padding-top: .2rem;
+}
+
+
+#lamp_container{
+	max-width: 7.5rem;
+	height: 0.46rem;
+}
+#lamp_container .lamp{
+	width: 70%;
+	margin: 0 auto;
+	height: 0.46rem;
+		background-image: url(../img/img_daidi@3x.png);
+			background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+}
+
+#lamp_container .lamp_term{
+	width: 100%;
+	height: .46rem;
+	margin: 0 auto;
+	padding-left: 15%;
+}
+
+#lamp_container img{
+	display: block;
+	width: .18rem;
+	height: .18rem;
+	padding: .14rem 0;
+	float: left;
+	margin-right: .15rem;
+
+}
+
+#lamp_container p{
+	height: 0.46rem;
+	line-height: 0.46rem;
+	font-size: .14rem;
+	color: #ee4f31;
+	float: left;
+}
+.act_time p{
+	font-size: .14rem;
+}
+#menu_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .675rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+#menu_container .act{
+	max-width: 7.5rem;
+	height: 2.0rem;
+}
+#menu_container .act_yin{
+	margin-top: .425rem;
+	width: 100%;
+	max-height: 2.0rem;
+		background-image: url(../img/img_yin@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_jin{
+	width: 100%;
+	
+		max-height: 2.0rem;
+		background-image: url(../img/img_jin@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_zuan{
+	width: 100%;
+	
+	max-height: 2.0rem;
+		background-image: url(../img/img_zuan@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_hongyun{
+	width: 100%;
+	
+		max-height: 2.0rem;
+		background-image: url(../img/img_hongyun@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+
+
+#menu_container .act_term{
+	width: 70%;
+	float: right;
+	padding-top: .2375rem;
+	padding-left: .785rem;
+}
+	#menu_container .act_term img{
+	display: block;
+	width: 1.125rem;
+	height: .375rem;
+}
+	#menu_container .act_term p{
+	width: 90%;
+	font-size: .13rem;
+	color: #666;
+	padding-top:.05rem;
+}
+
+	/*活动规则*/
+#rule_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+/*	background-image: url(../img/img_j_guize@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;*/
+	padding-bottom: .2rem;
+/*	padding-top: .1rem;*/
+}
+#rule_container img{
+	display: block;
+	width: 100%;
+	height: auto;
+
+
+}
+
+/*我的奖品*/
+#jiangpin_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_j_tiaofu@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: 1.35rem;
+}
+#jiangpin_container .tiyanjuan span{
+	position: relative;
+	left:1.235rem;
+	top:-.32rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+}
+
+#jiangpin_container .cangbaotu span{
+	position: relative;
+	left:1.435rem;
+	top:-.75rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+
+}
+.tiyanjuan figure{
+	display: block;
+	width: 50%;
+	height: 1.24rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+
+}
+.tiyanjuan figure  img{
+	margin: 0 auto;
+	width: 95%;
+	height: 95%;
+}
+
+.cangbaotu figure{
+	display: block;
+	width: 50%;
+	height: 1.95rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+}
+.cangbaotu figure img{
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+.hongyun figure{
+	display: block;
+	width: 70%;
+	height: 1.51rem;
+	margin: 0 auto;
+	margin-bottom: .1rem;
+}
+
+.hongyun figure img{
+		margin: 0 auto;
+	width: 100%;
+	height: 100%;
+
+}
+.tishi{
+	width: 100%;
+	height: .22rem;
+}
+
+.tishi p{
+	line-height: .22rem;
+	font-size: .14rem;
+	color: #999;
+	text-align: center;
+}
+
+#footer p{
+	font-size: .14rem;
+	color: #fff;
+	text-align: center;
+}
+
+      /*体验券*/
+.huode_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+         left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 3.75rem;
+        height: 5.1rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@2x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+.huode_container .huode_header{ 
+         width:100%;  
+         height: .3rem;
+}
+.huode_container p{
+        display: block;
+        width: 90%;
+        font-size:.18rem;
+        color: #fff;
+        line-height: .3rem;
+        text-align: center;
+        float: left;
+
+}
+.huode_header span{ 
+        display: block;
+        width: 10%;
+        float: right;
+}
+.huode_header img{
+        width: .16rem;
+        height: .16rem;
+        margin: 0 auto;
+        padding-top: .05rem;
+}
+
+.huode_menu{
+        padding-top: .41rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_menu figure{
+         display: block;
+        width: 50%;
+        height: .75rem;
+        margin: 0 auto;
+
+}
+.huode_menu img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+}
+.huode_dianjichakan{
+        padding-top: 2.5rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_dianjichakan button{
+        display: block;
+        margin: 0 auto;
+        width: 1.5rem;
+        height: .5rem;
+        line-height: .4rem;
+        background-color: #fff;
+        border: none;
+        border-radius: .08rem;
+        font-size: .18rem;
+        color: #ee4f31;
+        text-align: center;
+}
+
+/*88元体验券+藏宝图上卷*/
+.cangbaotu_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 3.75rem;
+        height: 5.35rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@2x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.cangbaotu_menu{
+	    padding-top: .18rem;
+        width: 100%;
+        height: 1.3rem;
+        margin-bottom: .2rem;
+
+}
+.cangbaotu_menu span{
+	color: #fff;
+	display: block;
+	float: left;
+	width: 10%;
+	line-height: 1.3rem;
+	font-size: .18rem;
+	text-align: center;
+}
+.cangbaotu_menu .figure_l{
+	padding-top: .3rem;
+        display: block;
+        width: 50%;
+        height: 1.1rem;
+        margin: 0 auto;
+        float: left;
+
+}
+
+.cangbaotu_menu .figure_l img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;     
+}
+
+.cangbaotu_menu .figure_r{
+        display: block;
+        width: 40%;
+        height: 1.3rem;
+        margin: 0 auto;
+        float: left;
+
+}
+.cangbaotu_menu .figure_r img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;
+}
+
+}
+
+
+
+/*媒体查询，大于640px小于750px*/
+@media (min-width: 640px) and (max-width: 750px) {
+	#container{
+	max-width: 7.5rem;
+    height: auto;
+	margin: 0 auto;
+/*	background-color: red;*/
+	background-image: url(../img/img_bjm@3x.png);
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	padding-top:2.675rem;
+}
+
+#right_container img{
+	width: 2.0rem;
+	height: .75rem;
+	padding-top: .2rem;
+}
+
+#lamp_container{
+	max-width: 7.5rem;
+	height: 0.46rem;
+}
+#lamp_container .lamp{
+	width: 60%;
+	margin: 0 auto;
+	height: 0.46rem;
+		background-image: url(../img/img_daidi@3x.png);
+			background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+}
+
+#lamp_container .lamp_term{
+	width: 100%;
+	height: .46rem;
+	margin: 0 auto;
+	padding-left: 15%;
+}
+
+#lamp_container img{
+	display: block;
+	width: .18rem;
+	height: .18rem;
+	padding: .14rem 0;
+	float: left;
+	margin-right: .15rem;
+
+}
+
+#lamp_container p{
+	height: 0.46rem;
+	line-height: 0.46rem;
+	font-size: .16rem;
+	color: #ee4f31;
+	float: left;
+}
+.act_time p{
+	font-size: .16rem;
+}
+#menu_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_tiaofu@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .975rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+#menu_container .act{
+	max-width: 7.5rem;
+	height: 2.5rem;
+}
+#menu_container .act_yin{
+	margin-top: .415rem;
+	width: 100%;
+	max-height: 2.5rem;
+		background-image: url(../img/img_yin@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_jin{
+	    width: 100%;	
+		max-height: 2.5rem;
+		background-image: url(../img/img_jin@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_zuan{
+	width: 100%;
+	
+	max-height: 2.5rem;
+		background-image: url(../img/img_zuan@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_hongyun{
+	width: 100%;
+	
+		max-height: 2.5rem;
+		background-image: url(../img/img_hongyun@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+
+#menu_container .act_term{
+	width: 70%;
+	float: right;
+	padding-top: .3475rem;
+	padding-left: .785rem;
+}
+#menu_container .act_term img{
+	display: block;
+	width: 1.125rem;
+	height: .375rem;
+}
+#menu_container .act_term p{
+	width: 90%;
+	font-size: .14rem;
+	color: #666;
+	padding-top:.05rem;
+}
+	
+/*活动规则*/
+#rule_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+/*	background-image: url(../img/img_j_guize@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;*/
+	padding-bottom: .2rem;
+/*	padding-top: .3rem;*/
+}
+
+#rule_container img{
+	display: block;
+	width: 100%;
+	height: auto;
+
+
+}
+
+/*我的奖品*/
+#jiangpin_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_j_tiaofu@3x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: 1.55rem;
+}
+#jiangpin_container .tiyanjuan span{
+	position: relative;
+	left:1.875rem;
+	top:-.32rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+}
+
+#jiangpin_container .cangbaotu span{
+	position: relative;
+	left:2.05rem;
+	top:-1.1rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+
+}
+.tiyanjuan figure{
+	display: block;
+	width: 50%;
+	height: 1.45rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+
+}
+.tiyanjuan figure  img{
+	margin: 0 auto;
+	width: 95%;
+	height: 95%;
+}
+
+.cangbaotu figure{
+	display: block;
+	width: 50%;
+	height: 2.53rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+}
+.cangbaotu figure img{
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+.hongyun figure{
+	display: block;
+	width: 70%;
+	height: 1.8rem;
+	margin: 0 auto;
+	margin-bottom: .1rem;
+}
+
+.hongyun figure img{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+
+}
+.tishi{
+	width: 100%;
+	height: .22rem;
+}
+
+.tishi p{
+	line-height: .22rem;
+	font-size: .18rem;
+	color: #999;
+	text-align: center;
+}
+
+#footer p{
+	font-size: .18rem;
+	color: #fff;
+	text-align: center;
+}
+
+/*体验券*/
+.huode_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 4.89rem;
+        height: 6.19rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@3x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.huode_menu figure{
+         display: block;
+        width: 50%;
+        height: .985rem;
+        margin: 0 auto;
+
+}
+
+.huode_dianjichakan{
+        padding-top: 3.5rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+/*88元体验券+藏宝图上卷*/
+.cangbaotu_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 4.89rem;
+        height: 6.4rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@3x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.cangbaotu_menu{
+	    padding-top: .08rem;
+        width: 100%;
+        height: 1.4rem;
+
+}
+.cangbaotu_menu span{
+	color: #fff;
+	display: block;
+	float: left;
+	width: 10%;
+	line-height: 1.5rem;
+	font-size: .18rem;
+	text-align: center;
+}
+.cangbaotu_menu .figure_l{
+	padding-top: .35rem;
+        display: block;
+        width: 50%;
+        height: 1.3rem;
+        margin: 0 auto;
+        float: left;
+
+}
+
+.cangbaotu_menu .figure_l img{
+        margin: 0 auto;
+        width: 85%;
+        height: 85%;     
+}
+
+.cangbaotu_menu .figure_r{
+        display: block;
+        width: 40%;
+        height: 1.4rem;
+        margin: 0 auto;
+        float: left;
+
+}
+.cangbaotu_menu .figure_r img{
+        margin: 0 auto;
+        width: 85%;
+        height: 100%;
+}
+
+
+}
+
+
+
+/*媒体查询，小于480px大于375*/
+@media (min-width: 375px) and (max-width: 480px)  {
+#container{
+	max-width: 7.5rem;
+    height: auto;
+	margin: 0  auto;
+/*	background-color: red;*/
+	background-image: url(../img/img_bjm@2x.png);
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	padding-top:2.0rem;
+}
+
+
+#lamp_container{
+	max-width: 7.5rem;
+	height: 0.36rem;
+}
+#lamp_container .lamp{
+	width: 80%;
+	margin: 0 auto;
+	height: 0.36rem;
+		background-image: url(../img/img_daidi@3x.png);
+			background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+}
+
+#lamp_container .lamp_term{
+	width: 100%;
+	height: .36rem;
+	margin: 0 auto;
+	padding-left: 12%;
+}
+
+#lamp_container img{
+	display: block;
+	width: .18rem;
+	height: .18rem;
+	padding: .09rem 0;
+	float: left;
+	margin-right: .15rem;
+
+}
+
+#lamp_container p{
+	height: 0.36rem;
+	line-height: 0.36rem;
+	font-size: .12rem;
+	color: #ee4f31;
+	float: left;
+}
+.act_time p{
+	font-size: .12rem;
+}
+
+#menu_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .525rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+#menu_container .act{
+	max-width: 7.5rem;
+	height: 1.5rem;
+}
+#menu_container .act_yin{
+	margin-top: .415rem;
+	width: 100%;
+	max-height: 1.5rem;
+		background-image: url(../img/img_yin@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_jin{
+	width: 100%;
+	
+		max-height: 1.5rem;
+		background-image: url(../img/img_jin@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_zuan{
+	width: 100%;
+	
+	max-height: 1.5rem;
+		background-image: url(../img/img_zuan@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_hongyun{
+	width: 100%;
+	
+		max-height: 1.5rem;
+		background-image: url(../img/img_hongyun@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+
+
+#menu_container .act_term{
+	width: 70%;
+	float: right;
+	padding-top: .15rem;
+	padding-left: .45rem;
+}
+#menu_container .act_term img{
+	display: block;
+	width: .75rem;
+	height: .25rem;
+}
+
+#menu_container .act_term p{
+	width: 90%;
+	font-size: .12rem;
+	color: #666;
+	padding-top:.03rem;
+}
+
+/*活动规则*/
+#rule_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+/*	background-image: url(../img/img_j_guize@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;*/
+	padding-bottom: .2rem;
+	/*padding-top: .15rem;*/
+}
+	
+#rule_container img{
+	display: block;
+	width: 100%;
+	height: auto;
+
+
+}
+
+/*我的奖品*/
+#jiangpin_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_j_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .985rem;
+}
+#jiangpin_container .tiyanjuan span{
+	position: relative;
+	left:1.0rem;
+	top:-.23rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+}
+
+#jiangpin_container .cangbaotu span{
+	position: relative;
+	left:1.0rem;
+	top:-.55rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+
+}
+.tiyanjuan figure{
+	display: block;
+	width: 50%;
+	height: .805rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+
+}
+.tiyanjuan figure  img{
+	margin: 0 auto;
+	width: 95%;
+	height: 95%;
+}
+
+.cangbaotu figure{
+	display: block;
+	width: 50%;
+	height: 1.35rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+}
+.cangbaotu figure img{
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+.hongyun figure{
+	display: block;
+	width: 70%;
+	height: 1.01rem;
+	margin: 0 auto;
+	margin-bottom: .1rem;
+}
+
+.hongyun figure img{
+		margin: 0 auto;
+	width: 100%;
+	height: 100%;
+
+}
+.tishi{
+	width: 100%;
+	height: .22rem;
+}
+
+.tishi p{
+	line-height: .22rem;
+	font-size: .12rem;
+	color: #999;
+	text-align: center;
+}
+
+
+        /*体验券*/
+.huode_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 3.26rem;
+        height: 4.13rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@2x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.huode_menu{
+        padding-top: .21rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_menu figure{
+         display: block;
+        width: 50%;
+        height: .65rem;
+        margin: 0 auto;
+
+}
+.huode_menu img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+}
+.huode_dianjichakan{
+        padding-top: 1.6rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+
+/*88元体验券+藏宝图上卷*/
+.cangbaotu_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 3.26rem;
+        height: 4.55rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm@2x.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.cangbaotu_menu{
+	    padding-top: .1rem;
+        width: 100%;
+        height: 1.3rem;
+        margin-bottom: .4rem;
+
+}
+.cangbaotu_menu span{
+	color: #fff;
+	display: block;
+	float: left;
+	width: 10%;
+	line-height: 1.3rem;
+	font-size: .18rem;
+	text-align: center;
+}
+.cangbaotu_menu .figure_l{
+	padding-top: .3rem;
+        display: block;
+        width: 50%;
+        height: 1.0rem;
+        margin: 0 auto;
+        float: left;
+
+}
+
+.cangbaotu_menu .figure_l img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;     
+}
+
+.cangbaotu_menu .figure_r{
+        display: block;
+        width: 40%;
+        height: 1.3rem;
+        margin: 0 auto;
+        float: left;
+
+}
+.cangbaotu_menu .figure_r img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;
+}
+
+}
+@media (min-width: 321px) and (max-width: 375px) {
+
+	#container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0  auto;
+/*	background-color: red;*/
+	background-image: url(../img/img_bjm@2x.png);
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	padding-top:1.875rem;
+}
+
+
+#lamp_container{
+	max-width: 7.5rem;
+	height: 0.36rem;
+}
+#lamp_container .lamp{
+	width: 80%;
+	margin: 0 auto;
+	height: 0.36rem;
+		background-image: url(../img/img_daidi@2x.png);
+			background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+}
+
+#lamp_container .lamp_term{
+	width: 100%;
+	height: .36rem;
+	margin: 0 auto;
+	padding-left: 9%;
+}
+
+#lamp_container img{
+	display: block;
+	width: .18rem;
+	height: .18rem;
+	padding: .09rem 0;
+	float: left;
+	margin-right: .06rem;
+
+}
+
+#lamp_container p{
+	height: 0.36rem;
+	line-height: 0.36rem;
+	font-size: .12rem;
+	color: #ee4f31;
+	float: left;
+}
+.act_time p{
+	font-size: .12rem;
+}
+#menu_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .325rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+#menu_container .act{
+	max-width: 7.5rem;
+	height: 1.2rem;
+}
+#menu_container .act_yin{
+	margin-top: .415rem;
+	width: 100%;
+	max-height: 1.2rem;
+		background-image: url(../img/img_yin@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_jin{
+	width: 100%;
+	
+		max-height: 1.2rem;
+		background-image: url(../img/img_jin@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_zuan{
+	width: 100%;
+	
+	max-height: 1.2rem;
+		background-image: url(../img/img_zuan@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_hongyun{
+	width: 100%;
+	
+		max-height: 1.2rem;
+		background-image: url(../img/img_hongyun@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+
+
+#menu_container .act_term{
+	width: 70%;
+	float: right;
+	padding-top: .15rem;
+	padding-left: .35rem;
+}
+#menu_container .act_term img{
+	display: block;
+	width: .75rem;
+	height: .25rem;
+}
+
+#menu_container .act_term p{
+	width: 90%;
+	font-size: .08rem;
+	color: #666;
+	padding-top:.03rem;
+}
+.xs_hidden{
+	display: none;
+}
+.zuan_p{
+	padding-top: 0 !important;;
+}
+
+/*活动规则*/
+
+#rule_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+/*	background-image: url(../img/img_j_guize@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;*/
+	padding-bottom: .2rem;
+	/*padding-top: .15rem;*/
+}
+#rule_container img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*我的奖品*/
+#jiangpin_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_j_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .85rem;
+}
+#jiangpin_container .tiyanjuan span{
+	position: relative;
+	left:.9rem;
+	top:-.23rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+}
+
+#jiangpin_container .cangbaotu span{
+	position: relative;
+	left:.9rem;
+	top:-.55rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+
+}
+.tiyanjuan figure{
+	display: block;
+	width: 50%;
+	height: .705rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+
+}
+.tiyanjuan figure  img{
+	margin: 0 auto;
+	width: 95%;
+	height: 95%;
+}
+
+.cangbaotu figure{
+	display: block;
+	width: 50%;
+	height: 1.15rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+}
+.cangbaotu figure img{
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+.hongyun figure{
+	display: block;
+	width: 70%;
+	height: .85rem;
+	margin: 0 auto;
+	margin-bottom: .1rem;
+}
+
+.hongyun figure img{
+		margin: 0 auto;
+	width: 100%;
+	height: 100%;
+
+}
+.tishi{
+	width: 100%;
+	height: .22rem;
+}
+
+.tishi p{
+	line-height: .22rem;
+	font-size: .12rem;
+	color: #999;
+	text-align: center;
+}
+
+ /*体验券*/
+.huode_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 2.98rem;
+        height: 4.13rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.huode_menu{
+        padding-top: .21rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_menu figure{
+         display: block;
+        width: 50%;
+        height: .65rem;
+        margin: 0 auto;
+
+}
+.huode_menu img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+}
+.huode_dianjichakan{
+        padding-top: 1.6rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+/*88元体验券+藏宝图上卷*/
+.cangbaotu_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 2.98rem;
+        height: 4.35rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.cangbaotu_menu{
+	    padding-top: .18rem;
+        width: 100%;
+        height: 1.1rem;
+        margin-bottom: .4rem;
+
+}
+.cangbaotu_menu span{
+	color: #fff;
+	display: block;
+	float: left;
+	width: 10%;
+	line-height: 1.1rem;
+	font-size: .18rem;
+	text-align: center;
+}
+.cangbaotu_menu .figure_l{
+	   padding-top: .2rem;
+        display: block;
+        width: 50%;
+        height: .9rem;
+        margin: 0 auto;
+        float: left;
+
+}
+
+.cangbaotu_menu .figure_l img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;     
+}
+
+.cangbaotu_menu .figure_r{
+        display: block;
+        width: 40%;
+        height: 1.1rem;
+        margin: 0 auto;
+        float: left;
+
+}
+.cangbaotu_menu .figure_r img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;
+}
+
+}
+@media screen and (max-width:320px){
+
+	#container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0  auto;
+/*	background-color: red;*/
+	background-image: url(../img/img_bjm@2x.png);
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	padding-top:1.9875rem;
+}
+
+
+#lamp_container{
+	max-width: 7.5rem;
+	height: 0.36rem;
+}
+#lamp_container .lamp{
+	width: 80%;
+	margin: 0 auto;
+	height: 0.36rem;
+		background-image: url(../img/img_daidi@2x.png);
+			background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+}
+
+#lamp_container .lamp_term{
+	width: 100%;
+	height: .36rem;
+	margin: 0 auto;
+	padding-left: 5%;
+}
+
+#lamp_container img{
+	display: block;
+	width: .15rem;
+	height: .15rem;
+	padding: .09rem 0;
+	float: left;
+	margin-right: .04rem;
+
+}
+
+#lamp_container p{
+	height: 0.36rem;
+	line-height: 0.36rem;
+	font-size: .12rem;
+	color: #ee4f31;
+	float: left;
+}
+.act_time p{
+	font-size: .12rem;
+}
+#menu_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .325rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+}
+
+#menu_container .act{
+	max-width: 7.5rem;
+	height: 1.2rem;
+}
+#menu_container .act_yin{
+	margin-top: .415rem;
+	width: 100%;
+	max-height: 1.2rem;
+		background-image: url(../img/img_yin@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_jin{
+	width: 100%;
+	
+		max-height: 1.2rem;
+		background-image: url(../img/img_jin@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_zuan{
+	width: 100%;
+	
+	max-height: 1.2rem;
+		background-image: url(../img/img_zuan@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+#menu_container .act_hongyun{
+	width: 100%;
+	
+		max-height: 1.2rem;
+		background-image: url(../img/img_hongyun@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+
+}
+
+#menu_container .act_term{
+	width: 70%;
+	float: right;
+	padding-top: .15rem;
+	padding-left: .35rem;
+}
+#menu_container .act_term img{
+	display: block;
+	width: .75rem;
+	height: .25rem;
+}
+
+#menu_container .act_term p{
+	width: 90%;
+	font-size: .08rem;
+	color: #666;
+	padding-top:.03rem;
+}
+.xs_hidden{
+	display: none;
+}
+
+.zuan_p{
+	padding-top: 0 !important;
+}
+
+/*活动规则*/
+#rule_container{
+	max-width: 7.5rem;
+	height: auto;
+	margin: 0 0.3rem;
+/*	background-image: url(../img/img_j_guize@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;*/
+	padding-bottom: .2rem;
+	/*padding-top: .15rem;*/
+}
+#rule_container img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+/*我的奖品*/
+#jiangpin_container{
+	max-width: 7.5rem;
+	height: 5.1rem;
+	margin: 0 0.3rem;
+	background-image: url(../img/img_j_tiaofu@2x.png);
+		background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	  -webkit-background-size: 100% 100%;
+	padding-bottom: .2rem;
+	padding-top: .7rem;
+}
+#jiangpin_container .tiyanjuan span{
+	position: relative;
+	left:.6rem;
+	top:-.18rem;
+	z-index: 9999;
+	width: .20rem;
+	height: .20rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+}
+
+#jiangpin_container .cangbaotu span{
+	position: relative;
+	left:.7rem;
+	top:-.45rem;
+	z-index: 9999;
+	width: .22rem;
+	height: .22rem;
+	color: #ee4f31;
+	font-size: .12rem;
+	background-color:#fff;
+	line-height: .22rem;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	padding: .02rem;
+	border:.01rem dotted #ee4f31;
+
+}
+.tiyanjuan figure{
+	display: block;
+	width: 50%;
+	height: .605rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+
+}
+.tiyanjuan figure  img{
+	margin: 0 auto;
+	width: 95%;
+	height: 95%;
+}
+
+.cangbaotu figure{
+	display: block;
+	width: 50%;
+	height: 1.05rem;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: .1rem;
+}
+.cangbaotu figure img{
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+.hongyun figure{
+	display: block;
+	width: 70%;
+	height: .75rem;
+	margin: 0 auto;
+	margin-bottom: .1rem;
+}
+
+.hongyun figure img{
+		margin: 0 auto;
+	width: 100%;
+	height: 100%;
+
+}
+.tishi{
+	width: 100%;
+	height: .22rem;
+}
+
+.tishi p{
+	line-height: .22rem;
+	font-size: .12rem;
+	color: #999;
+	text-align: center;
+}
+
+       /*体验券*/
+.huode_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 2.5rem;
+        height: 3.23rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.huode_menu{
+        padding-top: .1rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+
+.huode_menu figure{
+         display: block;
+        width: 50%;
+        height: .5rem;
+        margin: 0 auto;
+
+}
+.huode_menu img{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+}
+.huode_dianjichakan{
+        padding-top: 1.0rem;
+        width: 100%;
+        height: 1.24rem;
+
+}
+.huode_dianjichakan button{
+        display: block;
+        margin: 0 auto;
+        width: 1rem;
+        height: .33rem;
+        line-height: .33rem;
+        background-color: #fff;
+        border: none;
+        border-radius: .08rem;
+        font-size: .16rem;
+        color: #ee4f31;
+        text-align: center;
+}
+
+/*88元体验券+藏宝图上卷*/
+.cangbaotu_container{
+        display: none;
+        position: absolute; 
+         top: 50%; 
+        left: 0; 
+         bottom: 0;  
+         right: 0; 
+        max-width: 2.5rem;
+        height: 3.43rem;
+        margin:0 auto;
+        background-image: url(../img/img_t_bjm.png);
+        background-size: 100% 100%;
+        -moz-background-size:100% 100%;
+        padding-top: .1rem;
+         z-index: 9999; 
+}
+
+.cangbaotu_menu{
+	    padding-top: .1rem;
+        width: 100%;
+        height: .85rem;
+        margin-bottom: .6rem;
+
+}
+
+.cangbaotu_menu span{
+	color: #fff;
+	display: block;
+	float: left;
+	width: 10%;
+	line-height: .85rem;
+	font-size: .18rem;
+	text-align: center;
+}
+.cangbaotu_menu .figure_l{
+	   padding-top: .1rem;
+        display: block;
+        width: 50%;
+        height: .7rem;
+        margin: 0 auto;
+        float: left;
+
+}
+
+.cangbaotu_menu .figure_l img{
+        margin: 0 auto;
+        width: 75%;
+        height: 75%;     
+}
+
+.cangbaotu_menu .figure_r{
+        display: block;
+        width: 40%;
+        height: .85rem;
+        margin: 0 auto;
+        float: left;
+
+}
+.cangbaotu_menu .figure_r img{
+        margin: 0 auto;
+        width: 70%;
+        height: 70%;
+}
+}  

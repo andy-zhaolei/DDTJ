@@ -1,0 +1,59 @@
+@charset "utf-8";
+html {
+	font-size: 625%;
+}
+body,h1,h2,h3,h4,p,ul,ol,form,fieldset,figure {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size: .16rem;
+}
+ul,ol {
+	list-style: outside none none;
+}
+a {
+	text-decoration: none;
+
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+div,figure,figcaption {
+	box-sizing: border-box;
+}
+#rule{
+	max-width: 6.4rem;
+	margin: 0 auto;
+	padding:0.1rem;
+}
+#rule h3{
+	text-align: center;
+	padding: 0.05rem 0;
+}
+#rule p{
+	font-size: 0.14rem;
+	letter-spacing:0.01rem;
+}
+#rule .top{
+	font-size: 0.16rem;
+	text-align: center;
+	padding: 0.05rem 0;
+}
+#rule .p-indent{
+	text-indent: 0.3rem;
+}
+
+/*媒体查询，大于480px小于640px*/
+@media (min-width: 480px) and (max-width: 640px) {
+
+}
+
+/*媒体查询，小于480px*/
+@media (max-width: 480px) {
+	
+		
+}

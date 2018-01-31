@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<base href="http://39.108.247.168:8090/adgox/"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<title>百万宝箱</title>
+	<link rel="stylesheet" href="css/index.css">
+		<link rel="icon" href="img/favicon.ico">
+		<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){//加载用户获得卷信息		
+		$.ajax({
+			url:'http://39.108.247.168:8090/adgox/cbclient/api/banner/SSGB',
+			type:'POST',
+			dataType:'json',
+			/* async:false,  */
+			success:function(result){
+				$("#demo1").empty();			
+				var rs=JSON.stringify(result);
+				var rsjson=JSON.parse(rs);
+				var datajson=rsjson.data;
+				var html="<p><p>";
+				$.each(datajson,function(inx,obj){
+					html=html+"<p style='color:green;height:60px;line-height:15px'>"+obj.text+"<p>";				
+				});				
+				$("#demo1").html(html);					
+				}				
+			}	
+		);
+		
+		var params=window.location.search;
+		var userId=params.split("=")[1];
+		$("#hid").val(userId);
+		
+		
+		$.ajax({
+		/*  {"state":1,
+		"data":{"quan1":1,"quan2":0,"quan3":1,"quan4":0,"quan5":0,"quan6":0,"ty1":0,"ty2":0,"ty3":0,
+		"hf":0,"jk1":0,"jk2":0,"s":0,"x":0}}*/
+			
+			url:'http://39.108.247.168:8090/adgox/Jiangpin/Query/'+userId,
+			type:'POST',
+			async:false,
+			success:function(result){
+				var jsonparams=JSON.stringify(result);
+				var d=JSON.parse(jsonparams);				
+				if(d.state==1){
+					var dat=d.data;
+					if(dat.quan1>0){
+						$("#quan1").html(dat.quan1);
+						$("#j1").attr('src','img/btn_j_shouzuo_h@2x.png');											
+					}
+					if(dat.quan2>0){
+						$("#quan2").html(dat.quan2);
+						$("#j2").attr('src','img/btn_j_xingxing@2x.png');
+					}
+					if(dat.quan3>0){
+						$("#quan3").html(dat.quan3);
+						$("#j3").attr('src','img/btn_j_wan@2x.png');
+					}
+					if(dat.quan4>0){
+						$("#quan4").html(dat.quan4);
+						$("#j4").attr('src','img/btn_j_piciu@2x.png');
+					}
+					if(dat.quan5>0){
+						$("#quan5").html(dat.quan5);
+						$("#j5").attr('src','img/btn_j_piciu_h@2x.png');
+					}
+					if(dat.quan6>0){
+						$("#quan6").html(dat.quan6);
+						$("#j6").attr('src','img/btn_j_xiqing_h@2x.png');
+					}
+					if(dat.ty>0){
+						if(dat.ty==1){
+							$("#zdlb").attr('src','img/btn_j_tong_1_2@2x.png');
+						}
+						if(dat.ty==2){
+							$("#zdlb").attr('src','img/btn_j_tong_2_2@2x.png');
+						}
+						if(dat.ty==3){
+							$("#zdlb").attr('src','img/btn_j_tong_3_2@2x.png');
+						}
+						if(dat.ty==4){
+							$("#zdlb").attr('src','img/img_t_huafei@2x.png');
+						}
+						if(dat.ty==5){
+							$("#zdlb").attr('src','img/img_t_jingdongw@2x.png');
+						}
+						if(dat.ty==6){
+							$("#zdlb").attr('src','img/img_t_jingdongh@2x.png');
+						}						
+					}					
+					if(dat.s>0){
+						$("#sq").html(dat.s);
+						$("#shang").attr('src','img/btn_j_xiajuan@2x.png');
+					}
+					if(dat.x>0){
+						$("#xq").html(dat.x);
+						$("#xia").attr('src','img/btn_j_shangjuan@2x.png');
+					}
+				}
+			
+			}
+		
+		
+		});
+		
+		
+});	
+	</script>
+</head>
+<body>
+<div id="container">
+	<div id="right_container">
+		 <div class="guize_jiangping">
+		 	<input type="hidden"  id="hid" value="">
+			<img src="img/img_guize@2x.png" alt="" onclick="toRule()">
+			
+			<img src="img/fsy.png" alt="" onclick="toIndex()">
+			<script type="text/javascript">
+				function toRule(){
+					var userId=$("#hid").val();
+					window.location.href="http://39.108.247.168:8090/adgox/HD/rule.html?userId="+userId;				
+				}
+			
+				function toIndex(){
+					var userId=$("#hid").val();
+					window.location.href="http://39.108.247.168:8090/adgox/HD/index.html?userId="+userId;
+				}
+			</script>
+		 </div>
+	</div>
+<div class="clearfix"></div>
+	<div id="lamp_container">
+	  <div class="lamp">
+		  <div class="lamp_term">
+			<img src="img/icon_ts@3x@3x.png">		
+			<div align="left" id="demo" style="overflow:hidden;height:25px;
+			 padding-top:0.14rem;padding-bottom: 0.14rem;padding-left: 0px;padding-right: 0px;font-size: 10px;">  
+    		<div id="demo1" > 
+    		</div>  
+   			 <div id="demo2"></div>
+			<script language="javascript" type="text/javascript">  
+			var demo = document.getElementById("demo");  
+			var demo1 = document.getElementById("demo1");  
+			var demo2 = document.getElementById("demo2");  
+			var speed=80;    //数值越大滚动速度越慢  
+			demo2.innerHTML = demo1.innerHTML;    
+			demo.scrollTop = demo.scrollHeight+'px';  
+			function Marquee(){   		
+    		if(demo2.offsetTop-demo.scrollTop<=0)    //当滚动至demo1与demo2交界时  
+       		 demo.scrollTop-=demo1.offsetHeight    //demo跳到最顶端  
+    		else{  
+       		 demo.scrollTop++  
+   			 }       
+			}  
+			var MyMar = setInterval(Marquee,speed);  
+		</script>        
+	</div> 
+		  </div>
+	  </div>
+	</div>
+<div class="clearfix"></div>
+	<div class="act_time"><p>活动时间：2018.2.12-2018.3.9</p></div>
+	<div id="jiangpin_container">	
+	  <div class="tiyanjuan">
+			<figure>	
+				<img src="img/btn_j_xiqing_h@2x.png" alt="138" id="j6" onclick="quan6()">
+					
+				 <span id="quan6">0张</span> 
+			</figure>
+			<figure>
+				<img src="img/btn_j_piciu_hs@2x.png" alt="68" id="j5" onclick="quan5()">	
+				<span id="quan5">0张</span>		
+			</figure>
+			<figure>
+				<img src="img/btn_j_chajv_h@2x.png" alt="58" id="j4" onclick="quan4()">	
+				<span id="quan4">0张</span>			
+			</figure>
+			<figure>
+				<img src="img/btn_j_wan_h@2x.png" alt="32" id="j3" onclick="quan3()">
+				<span id="quan3">0张</span>				
+			</figure>
+			<figure>
+				<img src="img/btn_j_xingxing_h@2x.png" alt="9.8" id="j2" onclick="quan2()">
+				<span id="quan2">0张</span>				
+			</figure>
+			<figure>
+				<img src="img/btn_j_shouzuo_hs@2x.png" alt="8.8" id="j1" onclick="quan1()">	
+				<span id="quan1">0张</span>			
+			</figure>
+			<script type="text/javascript">
+				function quan1(){
+								
+				var s1=$("#quan1").text();
+					if("0张"!=s1){
+						var ua = navigator.userAgent.toLowerCase();	
+						if (/iphone|ipad|ipod/.test(ua)) {
+		    				WebViewJavascriptBridge.backHome();		
+		    				
+						} else if (/android/.test(ua)) {				
+		 					android.backHome();	
+						}							
+					}
+					
+				}
+				function quan2(){
+					var s2=$("#quan2").text();
+					if("0张"!=s2){
+						var ua = navigator.userAgent.toLowerCase();	
+						if (/iphone|ipad|ipod/.test(ua)) {
+		    				WebViewJavascriptBridge.backHome();				    				
+						} else if (/android/.test(ua)) {				
+		 					android.backHome();	
+						}	
+					}
+					
+				}
+				function quan3(){
+					var s3=$("#quan3").text();
+					if("0张"!=s3){
+						var ua = navigator.userAgent.toLowerCase();	
+						if (/iphone|ipad|ipod/.test(ua)) {
+		    				WebViewJavascriptBridge.backHome();				    				
+						} else if (/android/.test(ua)) {				
+		 					android.backHome();	
+						}	
+					}
+					
+				}
+				function quan4(){
+					var s4=$("#quan4").text();
+					if("0张"!=s4){
+						var ua = navigator.userAgent.toLowerCase();	
+						if (/iphone|ipad|ipod/.test(ua)) {
+		    				WebViewJavascriptBridge.backHome();				    				
+						} else if (/android/.test(ua)) {				
+		 					android.backHome();	
+						}	
+					}
+					
+				}
+				function quan5(){
+					var s5=$("#quan5").text();
+					if("0张"!=s5){
+						var ua = navigator.userAgent.toLowerCase();	
+						if (/iphone|ipad|ipod/.test(ua)) {
+		    				WebViewJavascriptBridge.backHome();				    				
+						} else if (/android/.test(ua)) {				
+		 					android.backHome();	
+						}
+					}
+					
+				}
+				function quan6(){
+					var s6=$("#quan6").text();
+					if("0张"!=s6){
+						var ua = navigator.userAgent.toLowerCase();	
+						if (/iphone|ipad|ipod/.test(ua)) {
+		    			WebViewJavascriptBridge.backHome();				    				
+						} else if (/android/.test(ua)) {				
+		 				android.backHome();	
+						}							
+					}					
+				}
+				
+			</script>
+		</div>
+			<div class="clearfix"></div>
+		<div class="cangbaotu">
+			<figure>
+			<img src="img/btn_j_xiajuan@2x.png" alt="shang" >
+			<span id="sq">0张</span>
+			</figure>
+			<figure>
+			<img src="img/btn_j_shangjuan@2x.png" alt="xia" >
+			<span id="xq">0张</span>
+			</figure>
+		</div>
+			<div class="clearfix"></div>
+		<div class="hongyun">
+			<figure>
+			<img src="img/btn_j_dalibao@2x.png" alt="" id="zdlb" >
+			</figure>
+		</div>	
+		<div class="clearfix"></div>
+		<div class="tishi">
+			<p>	温馨提示：活动领取刷新为24小时,奖品领取请联系官方客服</p>
+		</div>
+    </div>
+<footer id="footer">
+	<p>点点淘金一个可以赚钱的金银饰品订购平台</p>
+</footer>
+</div>
+</body>
+</html>

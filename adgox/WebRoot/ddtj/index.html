@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title> </title>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/common.css" /> -->
+<link href="./static/css/common.fcf8fa3cd5fc1eeb44b4a205f3386851.css" rel="stylesheet"></head>
+
+<body>
+    <div class="mod-register">
+        <div class="register-pic"><img src="./static/img/register-pic.a7dd1dd.png" width="100%" height="100%" ></div>
+        <h3 class="register-word">潮人首选的金银饰品专供平台</h3>
+        <!-- 手机号码 密码（遮掩） 验证码（倒计时） 邀请码 -->
+        <form class="ui-form" method="post">
+
+            <div class="field-mobile">
+                <div class="ui-form-item flex-section">
+                    <span class="flex-none item-layout">手机号：</span>
+                    <input style="width:150px" class="flex-column-1 item-layout" type="number" id="mobile" oninput="if(value.length>11)value=value.slice(0,11)" placeholder="输入手机号" value="">
+                </div>
+            </div>
+
+            <div class="field-verifyCode">
+                <div class="ui-form-item flex-section">
+                    <span class="flex-none item-layout">验证码：</span>
+                    <input class="item-layout" type="number" id="verifyCode" placeholder="输入验证码" oninput="if(value.length>4)value=value.slice(0,4)">
+                    <span style="text-align:right;color:rgba(48,48,48,0.50);position: absolute;right: 0;" class="item-layout" id="getVerifyCode">获取验证码</span>
+                </div>
+            </div>
+
+            <div class="field-password">
+                <div class="ui-form-item flex-section">
+                    <span class="flex-none item-layout">密　码：</span>
+                    <input class="flex-column-1 item-layout" type="password" id="password" placeholder="设置6位数字密码" maxlength="6">
+                    <span style="text-align: right;position: absolute;right: 0;" class="flex-none item-layout" id="verifyCodeStatus">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4xICg0NDQ2MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+55y8552b5YWzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IuWVhuWTgeWIl+ihqCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Imljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUzLjAwMDAwMCwgLTkzLjAwMDAwMCkiIGZpbGw9IiNEMkQyRDIiPgogICAgICAgICAgICA8ZyBpZD0i55y8552b6ZetIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNTMuMDAwMDAwLCA5My4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMiwxOCBDOC4zMTgxMDE2NywxOCA0Ljk4NDc2ODMzLDE2IDIsMTIgQzQuOTg0NzY4MzMsOCA4LjMxODEwMTY3LDYgMTIsNiBDMTUuNjgxODk4Myw2IDE5LjAxNTIzMTcsOCAyMiwxMiBDMTkuMDE1MjMxNywxNiAxNS42ODE4OTgzLDE4IDEyLDE4IFogTTEyLDE1IEMxMy42NTY4NTQyLDE1IDE1LDEzLjY1Njg1NDIgMTUsMTIgQzE1LDEwLjM0MzE0NTggMTMuNjU2ODU0Miw5IDEyLDkgQzEwLjM0MzE0NTgsOSA5LDEwLjM0MzE0NTggOSwxMiBDOSwxMy42NTY4NTQyIDEwLjM0MzE0NTgsMTUgMTIsMTUgWiIgaWQ9IkNvbWJpbmVkLVNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==">
+                    </span>
+                </div>
+            </div>
+            <input class="flex-column-1 item-layout" type="hidden" id="invitationCode" placeholder="输入邀请码" maxlength="4" />
+            <div class="field-submit">
+                <input type="button" class="button-submit" id="jSubmit" value="注册">
+            </div>
+            <a href="#" id="appLink" class="link-btn">已有账号，去下载</a>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function GetQueryString(name){
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        //设置title
+        var setTitle = function (){
+            let t = "",
+                s = GetQueryString("exchange"),
+                m = GetQueryString("memberChannel"),
+                url = "";
+            if(s==="CB_LONGHUI"){
+                if(m==="888"){
+                    t = "龙聚盈";
+                    url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.longhui.happy";
+                }else{
+                    t = "铂盈点金";
+                    url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.longhui.dragonmall";
+                }
+            }else if(s==="CB_GUOXIANG"){
+                t = "点点淘金";
+                url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.shzstr.diandiantaojin";
+            }else{
+                t = "邀请注册";
+            }
+            document.title = t;
+            document.getElementById("appLink").setAttribute("href",url);
+        }();
+    </script>
+<script type="text/javascript" src="./static/js/common.68fb07ddbecfc202fca5.js"></script></body>
+
+</html>
